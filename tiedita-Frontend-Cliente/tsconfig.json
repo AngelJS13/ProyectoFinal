@@ -6,6 +6,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "types": ["node"],  // Esta es la línea que agregamos
     "noImplicitAny": false,
     "noUnusedParameters": false,
     "skipLibCheck": true,

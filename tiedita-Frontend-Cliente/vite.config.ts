@@ -6,9 +6,9 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "::",
+    host: "::", // Esto permite escuchar en todas las interfaces de red
     port: 8080,
-    allowedHosts: ['proyectofinal-pmv7.onrender.com']
+    allowedHosts: ['proyectofinal-pmv7.onrender.com'], // Permite solo este host en producción
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
